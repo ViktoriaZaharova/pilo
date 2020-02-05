@@ -211,7 +211,7 @@ header
     color: #73a96d
     font-family: $bold
 
-.navbar-expand-md .navbar-nav .nav-link
+.navbar-expand-md .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .nav-link
   padding: 0
 
 .nav-item
@@ -222,7 +222,7 @@ header
 
 .navbar
   padding: 0
-  margin: auto
+  margin: auto 0
 
 .container
   max-width: 1540px
@@ -247,6 +247,28 @@ header
   &:hover
     text-decoration: none
     color: #fff
+
+.header-content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.navbar-toggler
+  padding: 0
+  border: none
+    radius: 0
+  outline: none
+  box-shadow: none
+  display: none
+  span
+    width: 20px
+    height: 2px
+    background: #fff
+    margin: 0 0 4px
+    display: block
+    &:last-child
+      margin: 0
 
 //main
 main
@@ -459,7 +481,27 @@ main
   right: 55px
   top: 50%
   transform: translate(0, -50%)
+  .line
+    &:before
+      content: ''
+      position: absolute
+      width: 400px
+      height: 2px
+      background-color: #ecebeb
+      right: 394px
+      top: 30.5%
+      z-index: 1
 
+    &:after
+      content: ''
+      position: absolute
+      transform: rotate(45deg)
+      background: #ecebeb
+      height: 1px
+      width: 53px
+      right: 349px
+      top: 34%
+      z-index: 1
   &:before
     content: ''
     position: absolute
@@ -499,29 +541,8 @@ main
   span
     margin: 0 12px 0 0
 
-.about-product__title
-  position: relative
 
-  &:before
-    content: ''
-    position: absolute
-    width: 400px
-    height: 2px
-    background-color: #ecebeb
-    right: -489px
-    top: 30px
-    z-index: 1
 
-  &:after
-    content: ''
-    position: absolute
-    transform: rotate(45deg)
-    background: #ecebeb
-    height: 1px
-    width: 53px
-    right: -534px
-    top: 49px
-    z-index: 1
 
 //about-company
 .about-company
@@ -902,6 +923,12 @@ input
       color: #000000
   .logo-icon
     margin: 0 19px 0 0
+
+.footer-top__content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
 
 
 @import "media"

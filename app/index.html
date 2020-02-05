@@ -20,7 +20,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -31,48 +32,49 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
+            <div class="col-12 header-content">
                 <a href="index.html" class="logo">
                     <span class="logo-icon"><img src="img/logo.png" alt=""></span>
                     <span class="logo-text">RUWOOD</span>
                 </a>
-            </div>
 
 
-            <nav class="navbar navbar-expand-md">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <nav class="navbar navbar-expand-lg">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-            <div class="col-6 col-md-4 col-lg-2">
                 <div class="header-contacts">
                     <a href="tel:+74955554905" class="phone">+7(495) 555 49 05</a>
 
                     <a href="#" class="btn btn-call">Заказать обратный звонок</a>
                 </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
@@ -332,7 +334,9 @@
                     </div>
                 </div>
 
-                <div class="about-product__image"><img src="img/product10.png" alt=""></div>
+                <div class="about-product__image">
+                    <div class="line"></div>
+                    <img src="img/product10.png" alt=""></div>
 
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-green">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
@@ -349,7 +353,7 @@
 <section class="about-company" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <h2>О КОМПАНИИ</h2>
 
                 <div class="text">
@@ -372,7 +376,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="image"><img src="img/img1.jpg" alt=""></div>
             </div>
         </div>
@@ -441,7 +445,8 @@
                     <img src="img/it3.jpg" alt="" class="img-bg">
 
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="511pt" height="511pt" viewBox="-66 0 511 511.99925">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="511pt" height="511pt"
+                             viewBox="-66 0 511 511.99925">
                             <g fill="#020202">
                                 <path d="M40.5 190c0 82.71 67.29 150 150 150s150-67.29 150-150-67.29-150-150-150-150 67.29-150 150zm150-130c71.684 0 130 58.316 130 130s-58.316 130-130 130-130-58.316-130-130 58.316-130 130-130zm0 0"/>
                                 <path d="M97.89 172.172l38.762 38.191-8.918 53.676a9.997 9.997 0 0 0 3.989 9.73 10.004 10.004 0 0 0 10.484.786l48.293-25.078 48.29 25.078a9.996 9.996 0 0 0 10.483-.785 9.997 9.997 0 0 0 3.989-9.73l-8.918-53.677 38.761-38.191a9.993 9.993 0 0 0 2.493-10.215 10.007 10.007 0 0 0-8.024-6.797l-53.793-8.097-24.34-48.676a9.997 9.997 0 0 0-17.886 0l-24.34 48.676-53.793 8.097a10.001 10.001 0 0 0-5.531 17.012zm67.438-6.106c3.219-.484 6-2.504 7.457-5.414L190.5 125.22l17.715 35.433a10.004 10.004 0 0 0 7.457 5.414l39.152 5.895-28.215 27.793a10.018 10.018 0 0 0-2.847 8.766l6.492 39.066-35.149-18.25a10.003 10.003 0 0 0-9.215 0l-35.148 18.25 6.492-39.066a9.996 9.996 0 0 0-2.847-8.766l-28.211-27.793zm0 0M200.5 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10zm0 0"/>
@@ -499,7 +504,8 @@
 
                     <div class="form-box">
                         <div class="form-box__title">Номер whats app</div>
-                        <label><input type="text" name="phone" placeholder="+7 (       )         -        -" required></label>
+                        <label><input type="text" name="phone" placeholder="+7 (       )         -        -"
+                                      required></label>
                     </div>
 
                     <button class="btn btn-green">ОСТАВИТЬ ЗАЯВКУ</button>
@@ -557,48 +563,42 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-12 footer-top__content">
                     <a href="index.html" class="logo">
                         <span class="logo-icon"><img src="img/logo.png" alt=""></span>
                         <span class="logo-text">RUWOOD</span>
                     </a>
-                </div>
 
 
-                <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarfooter" aria-controls="navbarfooter"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <nav class="navbar navbar-expand-lg">
 
-                    <div class="collapse navbar-collapse" id="navbarfooter">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                        <div class="collapse navbar-collapse" id="navbarFooter">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
 
-                <div class="col-6 col-md-4 col-lg-2">
                     <div class="header-contacts">
                         <a href="tel:+74955554905" class="phone">+7(495) 555 49 05</a>
 
                         <a href="#" class="btn btn-call">Заказать обратный звонок</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -616,7 +616,6 @@
         </div>
     </div>
 </footer>
-
 
 
 <script src="js/jquery.min.js"></script>

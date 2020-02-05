@@ -3,53 +3,496 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1510px)
+  .about-product__image
+    right: -30px
 
+  .form label, .form button
+    width: 300px
+
+@media only screen and (max-width: 1420px)
+  .product-content
+    justify-content: space-around
+
+  .about-product__image .line:before
+    width: 300px
+
+  .about-product__image
+    width: 530px
+    height: 490px
+
+  .about-product__image .line:after
+    right: 260px
+    top: 38%
+
+  .about-product__image .line:before
+    right: 306px
+    top: 34.5%
+
+@media only screen and (max-width: 1250px)
+  .nav-item
+    margin: 0 30px 0 0
+
+  .about-company .text
+    max-width: 600px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1220px)
+  .callback .container
+    padding: 60px 40px
+
+@media only screen and (max-width: 1199px)
+  .main-image
+    width: 430px
+
+  .btn-green
+    padding: 20px 35px
+    font-size: 16px
+
+  .btn-download
+    padding: 20px 35px 20px 65px
+    font-size: 16px
+    &:before
+      left: 15px
+
+  .about-product__image .line:before
+    width: 200px
+
+  .about-product h2
+    font-size: 40px
+
+  .equipment-box
+    margin: 0 auto
+
+
+
+@media only screen and (max-width: 1130px)
+  .form
+    flex-direction: column
+    align-items: center
+
+  .form-box
+    width: 100%
+    margin: 0 0 20px
+    justify-content: center
+    align-items: center
+
+  .form label
+    width: 100%
+    max-width: 430px
+
+  .form-box__title
+    text-align: center
+
+@media only screen and (max-width: 1100px)
+  .phone
+    font-size: 20px
+
+  .btn-call, .navbar-nav .nav-link
+    font-size: 14px
+
+  .logo
+    font-size: 22px
+
+  .nav-item
+    margin: 0 15px 0 0
+
+  .product-box
+    width: 300px
+
+  .product-box__image
+    height: 300px
+
+  .about-company .text
+    font-size: 16px
+    line-height: normal
+    max-width: 500px
+
+  .advantages-content
+    justify-content: space-around
+
+  .advantages
+    padding: 70px 0 0
+
+  .advantages-box
+    margin: 0 0 40px
+
+  .advantages h2
+    margin: 0 auto 40px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 1040px)
+  .about-product__image
+    position: relative
+    right: 0
+    width: 100%
+    height: auto
+    max-width: 600px
+    margin: 0 auto
+    bottom: 0
+    top: 0
+    transform: translate(0)
+    &:before, &:after
+      display: none
+    .line
+      display: none
+
+  .about-product__content
+    flex-direction: column
+    align-items: center
+
+
+  .about-product h2
+    text-align: center
+
+
+@media only screen and (max-width: 991px)
+  .navbar-toggler
+    display: block
+
+  header .navbar-collapse
+    position: fixed
+    left: 0
+    top: 0
+    width: 280px
+    height: 100%
+    z-index: 10
+    background: #ffffff
+    padding: 20px 30px
+    align-items: flex-start
+    transition: none
+    overflow-y: auto
+
+
+  .navbar-nav
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    .nav-link
+      color: #000
+
+  .nav-item
+    margin: 0 0 10px
+
+  h1
+    font-size: 40px
+    max-width: 650px
+    margin: 0 0 25px
+
+  .description
+    font-size: 18px
+    line-height: normal
+    max-width: 450px
+
+  main .btn-group
+    margin: 40px 0 0
+
+  main:before
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center
+
+  .catalog
+    padding: 50px 0
+
+  .catalog h2
+    margin: 0 0 50px
+
+  h2
+    font-size: 30px
+
+  .about-company .text
+    max-width: none
+    margin: 50px 0 40px
+
+  .about-company .image
+    max-width: none
+    height: auto
+    img
+      width: 100%
+      height: auto
+
+  .about-company
+    padding: 100px 0 90px
+
+  .equipment-image
+    position: relative
+    width: calc(100% - 40px)
+    height: auto
+    margin: 20px auto 0
+    order: 1
+
+
+  .equipment-box .description
+    max-width: none
+
+  .equipment-box
+    padding: 40px 50px
+
+  .equipment
+    padding: 70px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .equipment:before
+    opacity: .5
+
+@media only screen and (max-width: 900px)
+  main .btn-group
+    flex-direction: column
+    align-items: flex-start
+    .btn
+      margin: 0 0 20px
+      width: 300px
+
+  .contacts-wrapper
+    right: 20px
+    width: 370px
+
+  .contacts-wrapper p
+    font-size: 18px
+
+  .contacts-wrapper a, .contacts-wrapper span
+    font-size: 16px
+
+  .contacts-wrapper__item
+    padding: 25px 10px
+
+@media only screen and (max-width: 768px)
+  main
+    padding: 200px 0 80px
+
+  h1
+    font-size: 30px
+    max-width: 400px
+
+  .main-image
+    width: 330px
+
+  .description
+    max-width: 400px
+    font-size: 16px
+
+  h2
+    font-size: 26px
+
+  .about-company
+    padding: 60px 0 40px
+
+  .about-company .text p
+    margin: 0 0 20px
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 640px)
+  header
+    padding: 20px 0
 
+  .logo-icon
+    width: 50px
+    margin: 0 10px 0 0
+
+  .btn-green
+    padding: 10px 35px
+    font-size: 16px
+
+  .btn-download
+    padding: 10px 35px 10px 45px
+
+  .btn-download:before
+    width: 25px
+
+  .main-image
+    width: 230px
+
+  .product-box
+    width: 250px
+
+  .product-box__image
+    height: 200px
+
+  .product-box__image .btn
+    width: 97%
+    font-size: 16px
+    height: 50px
+
+  .product-box__content h3, .price
+    font-size: 20px
+
+  .list-size
+    font-size: 16px
+    line-height: 2
+
+  .btn-size
+    font-size: 16px
+
+  .btn-group
+    flex-direction: column
+    align-items: center
+    .btn
+      margin: 0 auto 20px
+      height: 52px
+      width: 290px
+      &:last-child
+        margin: 0
+
+  .about-product
+    padding: 100px 0
+
+  .btn
+    padding: 0
+
+  .decryption
+    font-size: 20px
+
+  .advantages-box
+    font-size: 18px
+
+  .footer-bottom
+    font-size: 16px
+
+@media only screen and (max-width: 520px)
+  input
+    height: 60px
+    font-size: 16px
+
+  .form button
+    width: 100%
+    height: 60px
+    font-size: 16px
+
+  .form-box__title
+    font-size: 16px
+
+  .form label
+    max-width: none
+    margin: 0 0 10px
+    height: 60px
+
+  .label-group
+    flex-direction: column
+    align-items: center
+    width: 100%
+
+  .form .checkbox
+    width: 100%
+
+  .checkbox .label
+    font-size: 16px
+
+  .checkbox:first-child .icon
+    width: 20px
+    height: 20px
+
+  .checkbox .icon
+    width: 24px
+    height: 24px
+
+  .callback .container .description
+    font-size: 16px
+    margin: 20px auto 30px
+
+  .callback
+    margin: 0 0 200px
+
+  .maps
+    margin: 0
+    height: 300px
+    order: 1
+
+  .contacts-wrapper
+    position: relative
+    bottom: 0
+    right: 0
+    width: 100%
+    height: auto
+    margin: 40px 0 0 0
+
+  .section-contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .footer-top
+    padding: 20px 0
+
+  .footer-bottom
+    padding: 15px 0
+
+  .footer-bottom__content
+    flex-direction: column
+    align-items: center
+
+  .copyright
+    margin: 0 auto 10px
+
+@media only screen and (max-width: 480px)
+  .main-image
+    display: none
+
+  h1
+    text-align: center
+    margin: 0 auto 20px
+
+  main
+    padding: 150px 0 100px
+    .btn-group
+      margin: 30px auto 0
+      width: 100%
+      justify-content: center
+      align-items: center
+
+  .description
+    text-align: center
+    max-width: none
+
+  .decryption
+    font-size: 16px
+    margin: 10px 0 20px
+
+  .equipment-box .description
+    margin: 20px 0 0
+    text-align: left
+    line-height: normal
+
+  .equipment-box
+    padding: 20px 30px
+
+@media only screen and (max-width: 440px)
+  .phone
+    font-size: 16px
+
+  .btn-call
+    font-size: 12px
+
+  .logo
+    font-size: 16px
+
+  .logo-icon
+    width: 40px
+
+  h1
+    font-size: 26px
+
+  main .btn-group
+    .btn-green
+      padding: 0
+    .btn
+      width: 280px
+      height: 52px
+
+  h2, .about-product h2
+    font-size: 22px
+
+  .about-product
+    padding: 70px 0
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 360px)
+  .btn-call
+    font-size: 10px
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .phone, .logo
+    font-size: 14px
