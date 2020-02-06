@@ -22,6 +22,7 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -32,37 +33,38 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-12 header-content">
-                <a href="index.html" class="logo">
+            <div class="col-6 col-lg-3">
+                <a href="index.html" class="logo wow slideInLeft">
                     <span class="logo-icon"><img src="img/logo.png" alt=""></span>
                     <span class="logo-text">RUWOOD</span>
                 </a>
 
+            </div>
+            <nav class="navbar navbar-expand-lg wow slideInDown">
 
-                <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div class="header-contacts">
+            <div class="col-6 col-lg-3">
+                <div class="header-contacts wow slideInRight">
                     <a href="tel:+74955554905" class="phone">+7(495) 555 49 05</a>
 
                     <a href="#" class="btn btn-call">Заказать обратный звонок</a>
@@ -76,28 +78,29 @@
                     <span></span>
                 </button>
             </div>
+
         </div>
     </div>
 </header>
 
 <main>
 
-    <div class="main-image"><img src="img/product1.png" alt=""></div>
+    <div class="main-image wow slideInRight"><img src="img/product1.png" alt=""></div>
 
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Продаем пиломатериалы
+                <h1 class="wow slideInUp">Продаем пиломатериалы
                     по ГОСТ по всей России</h1>
 
-                <div class="description">
+                <div class="description wow slideInUp">
                     <p>Компания изготавливает и продает высококачественные пиломатериалы из наиболее востребованных
                         пород дерева — от бюджетных до элитных.</p>
                 </div>
 
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-green">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
-                    <button type="button" class="btn btn-download btn-border">
+                    <button type="button" class="btn btn-green  wow fadeInLeft">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                    <button type="button" class="btn btn-download btn-border  wow fadeInRight">
                         СКАЧАТЬ ПРАЙС ЛИСТ
                     </button>
                 </div>
@@ -110,13 +113,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2><span class="color-accent">КАТАЛОГ</span> ПРОДУКЦИИ</h2>
+                <h2 class="wow flipInX"><span class="color-accent">КАТАЛОГ</span> ПРОДУКЦИИ</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 product-content">
-                <div class="product-box">
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
                     <div class="product-box__image"><img src="img/prod2.jpg" alt="">
                         <a href="#" class="btn btn-border">Заказать брус</a>
                     </div>
@@ -141,82 +144,90 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-box">
-                    <div class="product-box__image"><img src="img/prod3.jpg" alt="">
-                        <a href="#" class="btn btn-border">Заказать брус</a>
-                    </div>
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
+                <div class="product-box__image"><img src="img/prod3.jpg" alt="">
+                    <a href="#" class="btn btn-border">Заказать брус</a>
+                </div>
 
-                    <div class="product-box__content">
-                        <h3>Брус строганный</h3>
+                <div class="product-box__content">
+                    <h3>Брус строганный</h3>
 
-                        <a href="#" class="btn-size">
-                            Размеры и цены
-                        </a>
+                    <a href="#" class="btn-size">
+                        Размеры и цены
+                    </a>
 
-                        <div class="box-hidden">
-                            <ul class="list-size">
-                                <li class="active">100х100х6000</li>
-                                <li>100х150х6000</li>
-                                <li>100х200х6000</li>
-                                <li>150х150х6000</li>
-                                <li>150х200х6000</li>
-                                <li>200х200х6000</li>
-                            </ul>
-                            <div class="price">Цена: 60 000р</div>
-                        </div>
+                    <div class="box-hidden">
+                        <ul class="list-size">
+                            <li class="active">100х100х6000</li>
+                            <li>100х150х6000</li>
+                            <li>100х200х6000</li>
+                            <li>150х150х6000</li>
+                            <li>150х200х6000</li>
+                            <li>200х200х6000</li>
+                        </ul>
+                        <div class="price">Цена: 60 000р</div>
                     </div>
                 </div>
-                <div class="product-box">
-                    <div class="product-box__image"><img src="img/prod4.jpg" alt="">
-                        <a href="#" class="btn btn-border">Заказать брус</a>
-                    </div>
+                </div>
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
+                <div class="product-box__image"><img src="img/prod4.jpg" alt="">
+                    <a href="#" class="btn btn-border">Заказать брус</a>
+                </div>
 
-                    <div class="product-box__content">
-                        <h3>Брус обрезной</h3>
+                <div class="product-box__content">
+                    <h3>Брус обрезной</h3>
 
-                        <a href="#" class="btn-size">
-                            Размеры и цены
-                        </a>
+                    <a href="#" class="btn-size">
+                        Размеры и цены
+                    </a>
 
-                        <div class="box-hidden">
-                            <ul class="list-size">
-                                <li class="active">100х100х6000</li>
-                                <li>100х150х6000</li>
-                                <li>100х200х6000</li>
-                                <li>150х150х6000</li>
-                                <li>150х200х6000</li>
-                                <li>200х200х6000</li>
-                            </ul>
-                            <div class="price">Цена: 60 000р</div>
-                        </div>
+                    <div class="box-hidden">
+                        <ul class="list-size">
+                            <li class="active">100х100х6000</li>
+                            <li>100х150х6000</li>
+                            <li>100х200х6000</li>
+                            <li>150х150х6000</li>
+                            <li>150х200х6000</li>
+                            <li>200х200х6000</li>
+                        </ul>
+                        <div class="price">Цена: 60 000р</div>
                     </div>
                 </div>
-                <div class="product-box">
-                    <div class="product-box__image"><img src="img/prod5.jpg" alt="">
-                        <a href="#" class="btn btn-border">Заказать брус</a>
-                    </div>
+                </div>
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
+                <div class="product-box__image"><img src="img/prod5.jpg" alt="">
+                    <a href="#" class="btn btn-border">Заказать брус</a>
+                </div>
 
-                    <div class="product-box__content">
-                        <h3>Брусок строганный</h3>
+                <div class="product-box__content">
+                    <h3>Брусок строганный</h3>
 
-                        <a href="#" class="btn-size">
-                            Размеры и цены
-                        </a>
+                    <a href="#" class="btn-size">
+                        Размеры и цены
+                    </a>
 
-                        <div class="box-hidden">
-                            <ul class="list-size">
-                                <li class="active">100х100х6000</li>
-                                <li>100х150х6000</li>
-                                <li>100х200х6000</li>
-                                <li>150х150х6000</li>
-                                <li>150х200х6000</li>
-                                <li>200х200х6000</li>
-                            </ul>
-                            <div class="price">Цена: 60 000р</div>
-                        </div>
+                    <div class="box-hidden">
+                        <ul class="list-size">
+                            <li class="active">100х100х6000</li>
+                            <li>100х150х6000</li>
+                            <li>100х200х6000</li>
+                            <li>150х150х6000</li>
+                            <li>150х200х6000</li>
+                            <li>200х200х6000</li>
+                        </ul>
+                        <div class="price">Цена: 60 000р</div>
                     </div>
                 </div>
-                <div class="product-box">
+                </div>
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
                     <div class="product-box__image"><img src="img/prod2.jpg" alt="">
                         <a href="#" class="btn btn-border">Заказать брус</a>
                     </div>
@@ -241,7 +252,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-box">
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
                     <div class="product-box__image"><img src="img/prod3.jpg" alt="">
                         <a href="#" class="btn btn-border">Заказать брус</a>
                     </div>
@@ -266,7 +279,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-box">
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
                     <div class="product-box__image"><img src="img/prod4.jpg" alt="">
                         <a href="#" class="btn btn-border">Заказать брус</a>
                     </div>
@@ -291,7 +306,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-box">
+            </div>
+            <div class="product-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
+                <div class="product-box__wrapper">
                     <div class="product-box__image"><img src="img/prod5.jpg" alt="">
                         <a href="#" class="btn btn-border">Заказать брус</a>
                     </div>
@@ -327,8 +344,8 @@
             <div class="col-12 about-product__content">
 
                 <div class="about-product__title">
-                    <h2>Шашка для паллет <sup>*</sup></h2>
-                    <div class="decryption">
+                    <h2 class="wow flipInX">Шашка для паллет <sup>*</sup></h2>
+                    <div class="decryption wow flipInX">
                         <span>*</span>
                         <p>Продукт переработки древесных отходов</p>
                     </div>
@@ -339,8 +356,8 @@
                     <img src="img/product10.png" alt=""></div>
 
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-green">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
-                    <button type="button" class="btn btn-download btn-border">
+                    <button type="button" class="btn btn-green wow fadeInLeft">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                    <button type="button" class="btn btn-download btn-border wow fadeInRight">
                         СКАЧАТЬ ПРАЙС ЛИСТ
                     </button>
                 </div>
@@ -354,9 +371,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h2>О КОМПАНИИ</h2>
+                <h2 class="wow flipInX">О КОМПАНИИ</h2>
 
-                <div class="text">
+                <div class="text wow fadeInUp">
                     <p>Компания “Архангельск лес” изготавливает и продает
                         высококачественные пиломатериалы из хвойных пород дерева. У нас Вы найдете все для строительства
                         и
@@ -377,7 +394,7 @@
             </div>
 
             <div class="col-12 col-lg-6">
-                <div class="image"><img src="img/img1.jpg" alt=""></div>
+                <div class="image wow fadeInRight"><img src="img/img1.jpg" alt=""></div>
             </div>
         </div>
     </div>
@@ -389,10 +406,10 @@
         <div class="row">
             <div class="col-12">
                 <div class="equipment-box">
-                    <h2 class="color-accent">Мы используем современное
+                    <h2 class="color-accent wow flipInX">Мы используем современное
                         лазерное оборудование</h2>
 
-                    <div class="description">
+                    <div class="description wow flipInX">
                         <p>Изготовление деталей станины выполняется без участия человека и каждая деталь идеально
                             подходит друг к другу. Благодаря станку, достигается изначально ровная поверхность для
                             крепления направляющих.</p>
@@ -409,13 +426,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>НАШИ <span class="color-accent">ПРЕИМУЩЕСТВА</span></h2>
+                <h2 class="wow flipInX">НАШИ <span class="color-accent">ПРЕИМУЩЕСТВА</span></h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 advantages-content">
-                <div class="advantages-box">
+                <div class="advantages-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
                     <img src="img/it1.jpg" alt="" class="img-bg">
 
                     <div class="icon">
@@ -428,7 +444,7 @@
                     <p>Экологичное
                         производство</p>
                 </div>
-                <div class="advantages-box">
+                <div class="advantages-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
                     <img src="img/it2.jpg" alt="" class="img-bg">
 
                     <div class="icon">
@@ -441,7 +457,7 @@
                     <p>Доставка по всей
                         России и СНГ</p>
                 </div>
-                <div class="advantages-box">
+                <div class="advantages-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
                     <img src="img/it3.jpg" alt="" class="img-bg">
 
                     <div class="icon">
@@ -456,7 +472,7 @@
                     </div>
                     <p>Гарантия качества</p>
                 </div>
-                <div class="advantages-box">
+                <div class="advantages-box col-12 col-sm-6 col-md-4 col-lg-3 wow zoomIn">
                     <img src="img/it4.jpg" alt="" class="img-bg">
 
                     <div class="icon">
@@ -467,7 +483,6 @@
                     </div>
                     <p>Прозрачные условия</p>
                 </div>
-            </div>
         </div>
     </div>
 </section>
@@ -476,24 +491,24 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2><span class="color-accent">У ВАС ЕСТЬ ВОПРОС?</span> ВСЕГДА ПОМОЖЕМ!</h2>
+                <h2 class="wow flipInX"><span class="color-accent">У ВАС ЕСТЬ ВОПРОС?</span> ВСЕГДА ПОМОЖЕМ!</h2>
 
-                <div class="description">
+                <div class="description wow flipInX">
                     <p>Просто оставьте заявку и мы с Вами свяжемся</p>
                 </div>
 
                 <form method="post" class="form">
-                    <div class="form-box">
+                    <div class="form-box wow fadeInLeft">
                         <div class="form-box__title">Выберите способ связи</div>
                         <div class="label-group">
-                            <label class="checkbox">
+                            <label class="checkbox checkbox-phone">
                                 <input class="checkbox-inp" type="radio" name="radio">
                                 <span class="checkbox-custom"></span>
                                 <span class="icon"><img src="img/phone.svg" alt=""></span>
                                 <span class="label">Телефон</span>
                             </label>
 
-                            <label class="checkbox">
+                            <label class="checkbox checkbox-whatsapp">
                                 <input class="checkbox-inp" type="radio" name="radio">
                                 <span class="checkbox-custom"></span>
                                 <span class="icon"><img src="img/whatsapp.svg" alt=""></span>
@@ -502,13 +517,14 @@
                         </div>
                     </div>
 
-                    <div class="form-box">
-                        <div class="form-box__title">Номер whats app</div>
+                    <div class="form-box wow fadeInRight">
+                        <div class="form-box__title form-box__title-whatsapp">Номер whats app</div>
+                        <div class="form-box__title form-box__title-phone">Номер телефона</div>
                         <label><input type="text" name="phone" placeholder="+7 (       )         -        -"
                                       required></label>
                     </div>
 
-                    <button class="btn btn-green">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button class="btn btn-green wow fadeInRight">ОСТАВИТЬ ЗАЯВКУ</button>
                 </form>
             </div>
         </div>
@@ -519,7 +535,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>НАШИ <span class="color-accent">КОНТАКТЫ</span></h2>
+                <h2 class="wow flipInX">НАШИ <span class="color-accent">КОНТАКТЫ</span></h2>
             </div>
         </div>
     </div>
@@ -527,7 +543,7 @@
         <iframe src="https://yandex.ru/map-widget/v1/-/CKQfU400" frameborder="1" allowfullscreen="true"></iframe>
     </div>
 
-    <div class="contacts-wrapper">
+    <div class="contacts-wrapper wow fadeInRight">
         <div class="contacts-wrapper__item">
             <div class="icon"><img src="img/mail.svg" alt=""></div>
             <div class="text">
@@ -563,42 +579,42 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-12 footer-top__content">
-                    <a href="index.html" class="logo">
+                <div class="col-6 col-lg-3">
+                    <a href="index.html" class="logo wow fadeInLeft">
                         <span class="logo-icon"><img src="img/logo.png" alt=""></span>
                         <span class="logo-text">RUWOOD</span>
                     </a>
 
+                </div>
+                <nav class="navbar navbar-expand-lg wow fadeInUp">
 
-                    <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarfooter">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-                        <div class="collapse navbar-collapse" id="navbarFooter">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link go_to" href="#catalog">КАТАЛОГ ПРОДУКЦИИ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link go_to" href="#about">О КОМПАНИИ </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link go_to" href="#advantages">ПРЕИМУЩЕСТВА</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link go_to" href="#section-contacts">КОНТАКТЫ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-
-                    <div class="header-contacts">
+                <div class="col-6 col-lg-3">
+                    <div class="header-contacts wow fadeInRight">
                         <a href="tel:+74955554905" class="phone">+7(495) 555 49 05</a>
 
                         <a href="#" class="btn btn-call">Заказать обратный звонок</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -608,9 +624,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 footer-bottom__content">
-                    <div class="copyright">© 2020 RUWOOD. Все права защищены.</div>
+                    <div class="copyright wow flipInX">© 2020 RUWOOD. Все права защищены.</div>
 
-                    <a href="#" class="links">Политика конфиденциальности</a>
+                    <a href="#" class="links wow flipInX">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -626,6 +642,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

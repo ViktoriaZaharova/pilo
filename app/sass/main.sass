@@ -111,28 +111,28 @@ a
 .btn-green
   background: #73a96d
   color: #fff
-  padding: 23px 61px
+  padding: 23px 30px
 
   &:hover
     background: #679761
 
 .btn-border
   border: solid 3.8px #ffffff
-  padding: 23px 61px
+  padding: 23px 30px
 
   &:hover
     border-color: #73a96d
 
 .btn-download
   position: relative
-  padding: 23px 59px 23px 126px
+  padding: 23px 30px 23px 106px
 
   &:before
     content: ''
     position: absolute
     width: 37px
     height: 35px
-    left: 59px
+    left: 30px
     transform: translate(0, -50%)
     top: 50%
     background: url("../img/download.svg") no-repeat center
@@ -154,10 +154,10 @@ button
 
 h1
   letter-spacing: -0.6px
-  font-size: 60px
+  font-size: 40px
   font-family: $bold
   width: 100%
-  max-width: 780px
+  max-width: 565px
   margin: 0 0 36px
 
 h2
@@ -172,9 +172,9 @@ h2
 
 .description
   line-height: 1.6
-  font-size: 25px
+  font-size: 20px
   letter-spacing: -0.25px
-  max-width: 665px
+  max-width: 545px
   width: 100%
   font-family: $light
 
@@ -193,29 +193,27 @@ header
   align-items: center
   text-transform: uppercase
   color: #66ad55
-  font-size: 27px
+  font-size: 18px
   letter-spacing: -0.27px
-  line-height: 2.22
 
 .logo-icon
-  width: 76px
+  width: 66px
   margin: 0 22px 0 0
 
 .navbar-nav .nav-link
   color: #fff
   padding: 0
-  font-size: 15px
+  font-size: 13px
   line-height: 2.67
 
   &:hover
     color: #73a96d
-    font-family: $bold
 
 .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .nav-link
   padding: 0
 
 .nav-item
-  margin: 0 60px 0 0
+  margin: 0 20px 0 0
 
   &:last-child
     margin: 0
@@ -224,12 +222,17 @@ header
   padding: 0
   margin: auto 0
 
-.container
-  max-width: 1540px
+.navbar-nav
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
 
 .phone
   color: #73a96d
-  font-size: 24px
+  font-size: 20px
   font-family: $bold
   text-align: right
 
@@ -240,7 +243,7 @@ header
   letter-spacing: 0.17px
   text-decoration: underline
   color: #fff
-  font-size: 17px
+  font-size: 15px
   text-align: right
   justify-content: flex-end
 
@@ -284,8 +287,8 @@ main
     height: 100%
     left: 0
     width: 100%
-    background: url("../img/bg1.jpg") no-repeat center 2%
-      size: 100%
+    background: url("../img/bg1.jpg") no-repeat center
+      size: cover
     opacity: .37
 
   .container
@@ -310,7 +313,7 @@ main
 
 .main-image
   position: absolute
-  right: -55px
+  right: 0
   bottom: 60px
   z-index: 1
   width: 533px
@@ -323,21 +326,32 @@ main
   h2
     margin: 0 0 79px
 
-.product-content
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-  align-items: flex-start
 
 .product-box
   position: relative
-  max-width: 348px
+  //max-width: 348px
   width: 100%
+  min-height: 390px
+
+.product-box__wrapper
+  position: absolute
+  left: 50%
+  transform: translate(-50%,0)
+  top: 0
+  width: calc(100% - 30px)
+  height: 821px
+  > *
+    position: relative
+    z-index: 1
+
+.click
+  box-shadow: 0 0 57px rgba(0,0,0,.1)
+  z-index: 2
 
 .product-box__image
   width: 100%
   position: relative
-  height: 347px
+  height: 260px
   overflow: hidden
   display: flex
   align-items: center
@@ -366,10 +380,10 @@ main
     left: 50%
     top: 50%
     transform: translate(-50%, -50%)
-    font-size: 27px
+    font-size: 18px
     padding: 0
-    width: 289px
-    height: 76px
+    width: 98%
+    height: 60px
     opacity: 0
     visibility: hidden
 
@@ -393,14 +407,14 @@ main
   h3
     text-align: center
     letter-spacing: -0.27px
-    font-size: 27px
+    font-size: 22px
     margin: 0 auto 18px
 
 .btn-size
   margin: 0 auto
   position: relative
   color: rgba(0, 0, 0, 0.42)
-  font-size: 21px
+  font-size: 18px
   letter-spacing: -0.21px
   padding: 0 0 0 28px
 
@@ -460,13 +474,12 @@ main
     height: 100%
     left: 0
     width: 100%
-    background: url("../img/bg1.jpg") no-repeat center 2%
-      size: 100%
+    background: url("../img/bg2.jpg") no-repeat center
+      size: cover
     opacity: .35
 
   h2
     text-transform: none
-    font-size: 60px
     color: #fff
 
   sup
@@ -478,7 +491,7 @@ main
   width: 615px
   height: 549px
   position: absolute
-  right: 55px
+  right: -295px
   top: 50%
   transform: translate(0, -50%)
   .line
@@ -534,7 +547,7 @@ main
 .decryption
   display: flex
   align-items: center
-  font-size: 30px
+  font-size: 20px
   font-family: $light
   margin: 21px 0 60px
 
@@ -549,13 +562,12 @@ main
   padding: 109px 0 170px
 
   .text
-    margin: 86px 0 0 0
-    font-size: 24px
+    margin: 46px 0 0 0
     font-family: $light
-    line-height: 1.33
     max-width: 758px
     width: 100%
-
+    font-size: 18px
+    line-height: 1.3
     p
       margin: 0 0 30px
 
@@ -564,7 +576,7 @@ main
 
   .image
     max-width: 682px
-    height: 682px
+    height: 550px
     width: 100%
     overflow: hidden
     display: flex
@@ -613,8 +625,8 @@ main
   position: absolute
   right: 0
   top: 0
-  width: 1037px
-  height: 696px
+  width: 990px
+  height: 100%
   overflow: hidden
   display: flex
   align-items: center
@@ -631,26 +643,33 @@ main
 .advantages-box
   position: relative
   overflow: hidden
-  background: #282828
-  width: 358px
   height: 189px
   margin: 0 0 86px
   color: #fff
   display: flex
   align-items: center
   justify-content: center
-  padding: 10px 36px 10px 27px
   font-size: 24px
   font-family: $light
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    top: 0
+    width: calc(100% - 30px)
+    height: 100%
+    background: #282828
   .img-bg
     position: absolute
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
     opacity: .15
-    width: 100%
+    width: calc(100% - 30px)
     height: 100%
     object-fit: cover
+
   p, .icon
     position: relative
     z-index: 2
@@ -659,7 +678,7 @@ main
     display: flex
     align-items: center
     justify-content: center
-    margin: 0 36px 0 0
+    margin: 0 16px 0 10px
     min-width: 64px
     svg
       width: 100%
@@ -742,7 +761,7 @@ main
     background: #ffffff
     box-shadow: 0 0 57px rgba(#000,.04)
     position: relative
-    padding: 89px 92px 86px 89px
+    padding: 86px 40px
     z-index: 1
     &:before
       content: ''
@@ -775,13 +794,12 @@ main
     border-radius: 5px
     box-shadow: -0.6px 18px 35px 0 rgba(0, 0, 0, 0.09)
     background-color: #73a96d
-    width: 439px
+    width: 300px
     height: 89px
     padding: 0
-    font-size: 24px
   label
     display: flex
-    width: 439px
+    width: 300px
   .checkbox
     width: 202px
 
@@ -816,10 +834,15 @@ input
   font-family: $light
   margin: 0 0 23px
 
+
+.form-box__title-phone
+  display: none
+
 .label-group
   display: flex
   align-items: center
   flex-wrap: wrap
+
 
 
 //.section-contacts
@@ -839,22 +862,22 @@ input
 
 .contacts-wrapper
   position: absolute
-  bottom: 47px
-  right: 189px
+  bottom: 40px
+  right: 40px
   z-index: 2
   box-shadow: -0.6px 18px 35px 0 rgba(0, 0, 0, 0.04)
   background-color: #ffffff
-  width: 538px
+  width: 435px
   color: #000000
   padding: 0 28px
   a, span
     color: #000000
-    font-size: 21.5px
+    font-size: 18px
     font-family: 'Montserrat', sans-serif
     font-weight: 500
   p
     color: #9b9b9b
-    font-size: 24.5px
+    font-size: 20px
     line-height: 1.37
     font-weight: 600
     font-family: 'Montserrat', sans-serif
@@ -873,7 +896,7 @@ input
     z-index: 1
 
 .contacts-wrapper__item
-  padding: 39px 10px 37px
+  padding: 30px 10px
   border-bottom: 1px solid #e1dede
   display: flex
   align-items: flex-start
@@ -897,7 +920,7 @@ input
 //footer
 .footer-bottom
   background: #282828
-  padding: 40px 0 35px
+  padding: 30px 0 25px
   color: #797878
   font-size: 17px
   font-family: $light
